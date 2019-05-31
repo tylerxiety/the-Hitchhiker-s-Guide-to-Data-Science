@@ -1,4 +1,4 @@
-# the Hitchhiker's Guide to Data Science
+# The Hitchhiker's Guide to Data Science
 
 I put all the notes of online and on-campus data science courses and learning activities here. For me, it's putting all the pieces togather and then easier to do some reflection and comparison. For others, I hope it'll be useful.
 
