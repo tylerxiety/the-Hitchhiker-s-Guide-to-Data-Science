@@ -4,14 +4,23 @@ I put all the notes of online and on-campus data science courses and learning ac
 
 ### Courses list:
 
-#### Languages and libraries
+**Languages and libraries**
+- SQL
+-- Exploring and Preparing your Data with BigQuery by Google on Coursera
+- Python
+-- Using Databases with Python by Uni Michigan on Coursera
+-- Capstone: Retrieving, Processing, and Visualizing Data with Python by Uni Michigan on Coursera
+
+
+
+
 - Tableau by Duke Uni on Coursera
-- Capstone: Retrieving, Processing, and Visualizing Data with Python by Uni Michigan on Coursera
-- Using Databases with Python by Uni Michigan on Coursera
+
+
 - Serverless Data Analysis with Google BigQuery and Cloud Dataflow by Google on Coursera
 - Leveraging Unstructured Data with Cloud Dataproc on Google Cloud Platform by Google on Coursera
 - Google Cloud Platform Big Data and Machine Learning Fundamentals by Google on Coursera
-- Exploring and Preparing your Data with BigQuery by Google on Coursera
+
 - Introduction to Big Data by UC San Diego on Coursera
 - Data-driven Decision Making by PwC on Coursera
 - Inspiring and Motivating Individuals by Uni Michigan on Coursera
