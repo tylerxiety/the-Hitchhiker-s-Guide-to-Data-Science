@@ -5,7 +5,7 @@ I put all the notes of online and on-campus data science courses and learning ac
 ### Courses list:
 
 **Languages and libraries**
-- SQL
+**SQL**
 -- Exploring and Preparing your Data with BigQuery by Google on Coursera
 - Python
 -- Using Databases with Python by Uni Michigan on Coursera
