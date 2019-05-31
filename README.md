@@ -9,6 +9,7 @@ I put all the notes of online and on-campus data science courses and learning ac
 - SQL(BigQuery) on Kaggle
 - Exploring and Preparing your Data with BigQuery by Google on Coursera
 - Querying Data with Transact-SQL by Microsoft on edX
+
 **Python**
 - python on datacamp
 - python on Kaggle
@@ -18,10 +19,13 @@ I put all the notes of online and on-campus data science courses and learning ac
 - pandas on Kaggle
 - Data Visualization (pandas, seaborn, matplotlib, plotly, plotnine/ggplot2) on Kaggle
 - Python Visualization Dashboards with Plotly's Dash on Udemy
+
 **R**
 - R on datacamp
+
 **Scala**
 - Implementing Predictive Analytics with Spark in Azure HDInsight by Microsoft on edX
+
 **Spark**
 - Implementing Predictive Analytics with Spark in Azure HDInsight by Microsoft on edX
 
@@ -37,6 +41,7 @@ I put all the notes of online and on-campus data science courses and learning ac
 - Serverless Data Analysis with Google BigQuery and Cloud Dataflow by Google on Coursera
 - Leveraging Unstructured Data with Cloud Dataproc on Google Cloud Platform by Google on Coursera
 - Google Cloud Platform Big Data and Machine Learning Fundamentals by Google on Coursera
+
 **Azure**
 - Implementing Predictive Analytics with Spark in Azure HDInsight by Microsoft on edX
 - Querying Data with Transact-SQL by Microsoft on edX
