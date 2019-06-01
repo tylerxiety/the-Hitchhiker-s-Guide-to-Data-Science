@@ -3,7 +3,6 @@
 I put all the notes of online and on-campus data science courses and learning activities here. For me, it's putting all the pieces togather and then easier to do some reflection and comparison. For others, I hope it'll be useful.
 
 
-
 ## Machine Learning and Deep Learning
 - [Machine Learning by Stanford Uni on Coursera](https://www.coursera.org/learn/machine-learning) (Currently on Week 7)
 
@@ -12,6 +11,7 @@ I put all the notes of online and on-campus data science courses and learning ac
 **Supervised Learning**: Data has labels. Categorized into "regression" and "classification" problems.
 
 **Unsupervised Learning**: No labels. Categorized into "clustering" and "non-clustering" (e.g., the "Cocktail Party Algorithm") problems.
+
 
 ### Supervised Learning
 
@@ -51,6 +51,7 @@ I put all the notes of online and on-campus data science courses and learning ac
 
 
 **Decision Boundary**: the line that separates the area where y = 0 and where y = 1. It is created by hypothesis function.
+
 
 
 ### Courses list:
