@@ -73,11 +73,17 @@ I put all the notes of online and on-campus data science courses and learning ac
 **Machine Learning**: A program is said to learn from experience E with respect to tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E. In general, it has two broad classifications: Supervised learning and Unsupervised learning.
 
 **Supervised Learning**: Data has labels. Categorized into "regression" and "classification" problems.
-**Unsupervised Learning**: No labels. Categorized into "clustering" and "non-clustering" (ie, The "Cocktail Party Algorithm") problems.
 
-**Supervised Learning Models**: Given a training data set, to learn a function h : X → Y so that h(x) is a “good” predictor for the corresponding value of y. We can measure the accuracy of our function h by using a **cost function**. 
+**Unsupervised Learning**: No labels. Categorized into "clustering" and "non-clustering" (e.g., the "Cocktail Party Algorithm") problems.
 
-**Cost Function**: J(θ0,θ1)=1/(2m)*∑i=1m(y^i−yi)^2 = 1/(2m)*∑i=1m(hθ(xi)−yi)^2
+### Supervised Learning
 
+**Supervised Learning Models**: A hypothesis function H to predict the corresponding value Y of input X (i.e., H : X → Y). The accuracy of the function h is measured by a **cost function** J. 
 
+**Gradient Descent**: A method to estimate the parameters in the hypothesis function h by finding the minimum value of the cost function J, which is taking the derivative of cost function J as a function of the parameter estimates.
+
+**Model/function Types**:
+- **Linear Regression**: A linear function to model the relationship between dependent variable Y and one or more independent variables X. Linear regression with multiple variables is also known as **Multivariate Linear Regression**.
+
+\dot{x} & = \sigma(y-x) \\
 
