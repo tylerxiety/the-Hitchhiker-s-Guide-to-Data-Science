@@ -4,6 +4,15 @@ I put all the notes of online and on-campus data science courses and learning ac
 
 ### Courses list:
 
+### Machine Learning and Deep Learning
+- Machine Learning by Stanford Uni on Coursera (Currently on Week 7)
+- Neural Networks and Deep Learning by deeplearning.ai on Coursera (Currently on Week 2)
+- Machine Learning (intro and intermediate) on Kaggle
+- Deep Learning on Kaggle
+- Tensorflow on Udacity
+- Data Science & Machine Learning using Python - A Bootcamp on Udemy
+- Google Machine Learning Crash Course
+
 ### Languages and libraries
 **SQL**
 - SQL(BigQuery) on Kaggle
@@ -16,7 +25,7 @@ I put all the notes of online and on-campus data science courses and learning ac
 - Python 3 Programming by Uni Michigan on Coursera (until Week3)
 - Using Databases with Python by Uni Michigan on Coursera
 - Capstone: Retrieving, Processing, and Visualizing Data with Python by Uni Michigan on Coursera
-- pandas on Kaggle
+- Pandas on Kaggle
 - Data Visualization (pandas, seaborn, matplotlib, plotly, plotnine/ggplot2) on Kaggle
 - Python Visualization Dashboards with Plotly's Dash on Udemy
 
@@ -28,6 +37,10 @@ I put all the notes of online and on-campus data science courses and learning ac
 
 **Spark**
 - Implementing Predictive Analytics with Spark in Azure HDInsight by Microsoft on edX
+
+**Tensorflow**
+- Google Machine Learning Crash Course
+- Tensorflow on Udacity
 
 ### Visualization and BI Tools
 - Tableau by Duke Uni on Coursera
@@ -50,14 +63,13 @@ I put all the notes of online and on-campus data science courses and learning ac
 ### Big Data
 - Introduction to Big Data by UC San Diego on Coursera
 
-### Machine Learning and Deep Learning
-- Machine Learning by Stanford Uni on Coursera (Currently on Week 7)
-- Neural Networks and Deep Learning by deeplearning.ai on Coursera (Currently on Week 2)
-- Machine Learning (intro and intermediate) on Kaggle
-- Deep Learning on Kaggle
-- Tensorflow on Udacity on Kaggle
-- Data Science & Machine Learning using Python - A Bootcamp on Udemy
-
 ### Other technology
 - Inspiring and Motivating Individuals by Uni Michigan on Coursera
 - Blockchain by Uni Buffalo & The State Uni New York on Coursera (currently on week 3)
+
+## Machine Learning and Deep Learning
+- [Machine Learning by Stanford Uni on Coursera](https://www.coursera.org/learn/machine-learning) (Currently on Week 7)
+
+**Machine Learning**: A program is said to learn from experience E with respect to tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E. In general, it has two broad classifications: Supervised learning and Unsupervised learning.
+
+
