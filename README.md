@@ -80,8 +80,37 @@ I put all the notes of online and on-campus data science courses and learning ac
 
 **Supervised Learning Models**: A hypothesis function H to predict the corresponding value Y of input X (i.e., H : X → Y). The accuracy of the function h is measured by a **cost function** J. 
 
-**Gradient Descent**: A method to estimate the parameters in the hypothesis function h by finding the minimum value of the cost function J, which is taking the derivative of cost function J as a function of the parameter estimates.
+**Cost Function**: a convex  function of the parameter estimates θ to measure the accuracy of hypothesis function H. Function types are different for regression and classification models.
 
-**Model/function Types**:
-- **Linear Regression**: A linear function to model the relationship between dependent variable Y and one or more independent variables X. Linear regression with multiple variables is also known as **Multivariate Linear Regression**.
+**Ways to Optimize θ**:
+- **Gradient Descent**: A method to estimate the parameters θ in the hypothesis function h by finding the minimum value of the cost function J, which is taking the derivative of cost function J(θ).
+- **Normal Equation**: another way of minimizing J by explicitly taking its derivatives with respect to the θ's, and setting them to zero. This allows to find the optimum θ without iteration.
+- **More sophisticated ones**: Conjugate gradient, BFGS, L-BFGS, etc.
 
+**Techniques for Gradient Descent**:
+- **Feature Scaling**: divide the input values by the range, resulting in a new range of just 1. 
+- **Mean Normalization**: subtract the average value from the values for that input variable, resulting in a new average value for the input variable of just zero.
+- **Learning Rate alpha**: increase alpha if convergance is slow, decrease alpha if cost function J(θ) ever increases.
+- **Automatic Convergence Test**: declare convergence if J(θ) decreases by less than E in one iteration, where E is some small value such as 10^−3. However, it's difficult to choose this threshold value.
+
+**Comparison of Gradient Descent and Normal Equation**:
+
+| Gradient Descent | Normal Equation |
+|----------------|:-------------:|
+| Need to choose alpha | No need to choose alpha |
+| Needs many iterations | No need to iterate |
+| Complexity O (k\*n^2) | Complexity O (k\*n^3), need to calculate inverse of X^T\*X |
+| Works well when n is large | Slow if n is very large |
+
+**Model/Function Types**:
+- **Linear Regression**: a linear function to model the relationship between dependent variable Y and one or more independent variables X.
+-  **Multivariate Linear Regression**: Linear regression with multiple variables.
+
+- **Polynomial Regression**: combine multiple features into one (e.g., combine x1 and x2 into a new feature x3 by taking x1\*x2). This can be a quadratic, cubic or square root function.
+
+- **Classification Model / Binary Logistic Regression**: use a **Logistic Function** (also called **Sigmoid Function**) maps any input X to the (0, 1) interval. The hypothesis function H gives the probability of output Y (e.g., H(x)=0.7 means a probability of 70% that the output is 1, or 30% for output 0). 
+
+- **Multiclass Classification**: a One-vs-all approach. Train a Binary Logistic Regression classifier H for each class￼ to predict the probability that ￼ ￼y = i￼￼. To make a prediction on a new x, pick the class ￼that maximizes H.
+
+
+**Decision Boundary**: the line that separates the area where y = 0 and where y = 1. It is created by hypothesis function.
