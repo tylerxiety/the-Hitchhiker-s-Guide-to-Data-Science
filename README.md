@@ -85,9 +85,3 @@ I put all the notes of online and on-campus data science courses and learning ac
 **Model/function Types**:
 - **Linear Regression**: A linear function to model the relationship between dependent variable Y and one or more independent variables X. Linear regression with multiple variables is also known as **Multivariate Linear Regression**.
 
-\begin{align}
-\dot{x} & = \sigma(y-x) \\
-\dot{y} & = \rho x - y - xz \\
-\dot{z} & = -\beta z + xy
-\end{align}
-
