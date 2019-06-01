@@ -72,4 +72,12 @@ I put all the notes of online and on-campus data science courses and learning ac
 
 **Machine Learning**: A program is said to learn from experience E with respect to tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E. In general, it has two broad classifications: Supervised learning and Unsupervised learning.
 
+**Supervised Learning**: Data has labels. Categorized into "regression" and "classification" problems.
+**Unsupervised Learning**: No labels. Categorized into "clustering" and "non-clustering" (ie, The "Cocktail Party Algorithm") problems.
+
+**Supervised Learning Models**: Given a training data set, to learn a function h : X → Y so that h(x) is a “good” predictor for the corresponding value of y. We can measure the accuracy of our function h by using a **cost function**. 
+
+**Cost Function**: J(θ0,θ1)=1/(2m)*∑i=1m(y^i−yi)^2 = 1/(2m)*∑i=1m(hθ(xi)−yi)^2
+
+
 
