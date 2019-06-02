@@ -36,12 +36,12 @@ I put all the notes of online and on-campus data science courses and learning ac
 
 - **Comparison of Gradient Descent and Normal Equation**:
 
- | Gradient Descent | Normal Equation |
- |----------------|:-------------:|
- | Need to choose alpha | No need to choose alpha |
- | Needs many iterations | No need to iterate |
- | Complexity O (k\*n^2) | Complexity O (k\*n^3), need to calculate inverse of X^T\*X |
- | Works well when n is large | Slow if n is very large |
+  | Gradient Descent | Normal Equation |
+  |----------------|:-------------:|
+  | Need to choose alpha | No need to choose alpha |
+  | Needs many iterations | No need to iterate |
+  | Complexity O (k\*n^2) | Complexity O (k\*n^3), need to calculate inverse of X^T\*X |
+  | Works well when n is large | Slow if n is very large |
 
 - **Model/Function Types**:
   - **Linear Regression**: a linear function to model the relationship between dependent variable Y and one or more independent variables X.
@@ -54,7 +54,20 @@ I put all the notes of online and on-campus data science courses and learning ac
 
 - **Decision Boundary**: the line that separates the area where y = 0 and where y = 1. It is created by hypothesis function.
 
-- ### Regularization
+### Regularization
+
+- **Underfitting / High Bias**: is when hypothesis function H maps poorly to the trend of the data. It is usually caused by a function that is too simple or uses too few features. 
+ 
+- **Overfitting / High Variance**: is when hypothesis function H fits the available data but does not generalize well to predict new data. It is usually caused by a complicated function that creates a lot of unnecessary curves and angles unrelated to the data.
+ 
+- **Options to Address Overfitting**:
+  - **Reduce the number of features**:
+    - Manually select which features to keep.
+    - Use a model selection algorithm.
+  - **Regularization**:
+    - Keep all the features, but reduce the magnitude of parameters θ 
+    - Regularization works well when we have a lot of slightly useful features.
+    
 
 
 ### Courses list:
