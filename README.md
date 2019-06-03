@@ -85,7 +85,7 @@ I put all the notes of online and on-campus data science courses and learning ac
   - **Vocabulary list**: 
     - Choose only the most frequently occuring words as the set of words considered.
     - Map each word in the preprocessed emails into a list of word indices.
-  - **Feature Extraction**: Get a vector of indice of the vocabulary list that match the words in emails. 
+  - **Feature Extraction**: produces a feature vector from the word indices. 
   - **Train**
   
 ### Courses list:
