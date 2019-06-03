@@ -49,7 +49,7 @@ I put all the notes of online and on-campus data science courses and learning ac
   - **Polynomial Regression**: combine multiple features into one (e.g., combine x1 and x2 into a new feature x3 by taking x1\*x2). This can be a quadratic, cubic or square root function.
   - **Classification Model / Binary Logistic Regression**: use a **Logistic Function** (also called **Sigmoid Function**) maps any input X to the (0, 1) interval. The hypothesis function H gives the probability of output Y (e.g., H(x)=0.7 means a probability of 70% that the output is 1, or 30% for output 0). 
   - **Multiclass Classification**: a One-vs-all approach. Train a Binary Logistic Regression classifier H for each class￼ to predict the probability that ￼ ￼y = i￼￼. To make a prediction on a new x, pick the class ￼that maximizes H.
-  - **Support Vector Machine (SVM)**
+  - **Support Vector Machines (SVM)**
 
 - **Decision Boundary**: the line that separates the area where y = 0 and where y = 1. It is created by hypothesis function.
 
@@ -69,7 +69,7 @@ I put all the notes of online and on-campus data science courses and learning ac
     
 ### Application Examples
 
-- **Spam Classification
+- **Spam Classification with SVM**
   - **Email preprocessing and normalization**:
     - Remove Header
     - Lower-casing
