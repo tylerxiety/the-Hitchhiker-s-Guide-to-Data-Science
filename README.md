@@ -109,7 +109,10 @@ I put all the notes of online and on-campus data science courses and learning ac
            - Reduce memory/disk needed to store data
          - Better Data Visualization
        - Bad Application: Use PCA to prevent overfitting (instead, use regularization).
-     
+   - **Principal Component Analysis (PCA)**:
+      - Normalize the data.
+      - Compute the covariance matrix of the data.
+      - Compute the eigenvectors.
   
 ### Courses list:
 
