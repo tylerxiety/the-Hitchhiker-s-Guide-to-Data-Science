@@ -48,9 +48,8 @@ I put all the notes of online and on-campus data science courses and learning ac
   -  **Multivariate Linear Regression**: Linear regression with multiple variables. 
   - **Polynomial Regression**: combine multiple features into one (e.g., combine x1 and x2 into a new feature x3 by taking x1\*x2). This can be a quadratic, cubic or square root function.
   - **Classification Model / Binary Logistic Regression**: use a **Logistic Function** (also called **Sigmoid Function**) maps any input X to the (0, 1) interval. The hypothesis function H gives the probability of output Y (e.g., H(x)=0.7 means a probability of 70% that the output is 1, or 30% for output 0). 
-
   - **Multiclass Classification**: a One-vs-all approach. Train a Binary Logistic Regression classifier H for each class￼ to predict the probability that ￼ ￼y = i￼￼. To make a prediction on a new x, pick the class ￼that maximizes H.
-
+  - **Support Vector Machine (SVM)**
 
 - **Decision Boundary**: the line that separates the area where y = 0 and where y = 1. It is created by hypothesis function.
 
@@ -68,7 +67,7 @@ I put all the notes of online and on-campus data science courses and learning ac
     - Keep all the features, but reduce the magnitude of parameters θ 
     - Regularization works well when we have a lot of slightly useful features.
     
-### Unsupervised Learning
+### Application Examples
 
 - **Spam Classification
   - **Email preprocessing and normalization**:
@@ -87,6 +86,30 @@ I put all the notes of online and on-campus data science courses and learning ac
     - Map each word in the preprocessed emails into a list of word indices.
   - **Feature Extraction**: produces a feature vector from the word indices. 
   - **Train**
+  
+  
+### Unsupervised Learning
+
+- **Models**:
+   - **k-Means Algorithm**: An iterative procedure that starts by guessing the initial centroids, and then refines this guess by repeatedly assigning examples to their closest centroids and then recomputing the centroids based on the assignments.
+     - Random initialization: 
+       - K < m
+       - Randomly pick K training examples
+       - Try random initialization a couple of times (2-10, 10-100, ...)
+     - Choose the value K:
+       - Elbow method: Find the "elbow" of the plot. But not always is the case.
+       - Evaluate K means based on a metric.
+       
+   - **Dimentionality Reduction Model and Examples**:
+       - Models:
+         - Principal Component Analysis (PCA)
+       - Applictions:
+         - Data Compression: 
+           - Speed up supervised learning
+           - Reduce memory/disk needed to store data
+         - Better Data Visualization
+       - Bad Application: Use PCA to prevent overfitting (instead, use regularization).
+     
   
 ### Courses list:
 
