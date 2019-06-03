@@ -12,9 +12,9 @@ I put all the notes of online and on-campus data science courses and learning ac
 
 **Machine Learning**: A program is said to learn from experience E with respect to tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.
 
-**Supervised Learning**: Data has labels. Categorized into "regression" and "classification" problems.
+**Supervised Learning**: Needs labelled examples (x,y). Categorized into "regression" and "classification" problems.
 
-**Unsupervised Learning**: Data has no labels. Categorized into "clustering" and "non-clustering" (e.g., the "Cocktail Party Algorithm") problems.
+**Unsupervised Learning**: Needs only the input (x). Categorized into "clustering" (e.g.,  market segmentation, text summarization)and "non-clustering" (e.g., the "Cocktail Party Algorithm") problems.
 
 
 ### Supervised Learning
@@ -68,8 +68,26 @@ I put all the notes of online and on-campus data science courses and learning ac
     - Keep all the features, but reduce the magnitude of parameters θ 
     - Regularization works well when we have a lot of slightly useful features.
     
+### Unsupervised Learning
 
-
+- **Spam Classification
+  - **Email preprocessing and normalization**:
+    - Remove Header
+    - Lower-casing
+    - Stripping HTML
+    - Normalizing URLs
+    - Normalizing Email Addresses
+    - Normalizing Numbers
+    - Normalizing Dollars
+    - Word Stemming: Words are reduced to their stemmed form. For example, "discount", "discounts",discounted" and "discounting" are all replaced with "discount". Sometimes, the Stemmer actually strips additional characters from the end, so "include", "includes", "included" and "including" are all replaced with "includ".
+    - Removal of non-words: Non-words and punctuation have been removed. All white spaces (tabs, newlines, spaces) have all been trimmed to a single space character.
+    
+  - **Vocabulary list**: 
+    - Choose only the most frequently occuring words as the set of words considered.
+    - Map each word in the preprocessed emails into a list of word indices.
+  - **Feature Extraction**: Get a vector of indice of the vocabulary list that match the words in emails. 
+  - **Train**
+  
 ### Courses list:
 
 ### Machine Learning and Deep Learning
