@@ -114,6 +114,16 @@ I put all the notes of online and on-campus data science courses and learning ac
       - Compute the covariance matrix of the data.
       - Compute the eigenvectors.
   
+  
+   - Anomaly Detection Examples:
+     - Fraud detection
+     - Monitoring machines in a data center
+     - Manuafacturing (e.g. airvraft engines)
+  
+  - Address asymmetrical (non-gausian) features
+  
+  
+  
 ### Courses list:
 
 ### Machine Learning and Deep Learning
