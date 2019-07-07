@@ -146,7 +146,10 @@ I put all the notes of online and on-campus data science courses and learning ac
     | Manually create features to capture correlations between features. | Automatically captres correlations.|
     |Computationally cheaper, scale better to larger feature size n; perform good if training set size m is small. | computationaly more expensive; must have m > n, or else ∑ is non-invertible.|
 
-  
+  - **Gradient Descent with Large Datasets:**
+    - Batch Gradient Descent (BGD): Use all m examples in each iteration.
+    - Stochastic Gradient Descent (SGD): Use 1 examples in each iteration. Usually faster than BGD when m is large.
+    - Mini-batch Gradient Descent (MGD): Use b example in each iteration. b can be 2-100, a rule of thumb is to use 10. MGD is usually faster than both BGD and SGD. 
   
   
 ### Courses list:
