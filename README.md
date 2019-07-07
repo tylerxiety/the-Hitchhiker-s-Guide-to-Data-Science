@@ -151,11 +151,14 @@ I put all the notes of online and on-campus data science courses and learning ac
     - Stochastic Gradient Descent (SGD): Use 1 examples in each iteration. Usually faster than BGD when m is large.
     - Mini-batch Gradient Descent (MGD): Use b example in each iteration. b can be 2-100, a rule of thumb is to use 10. MGD is usually faster than both BGD and SGD. 
   
+  - **Online Learning Algorithm**
+    - Instead of fixed dataset, use data from users as training data once and dicard the data after, continuously train the model as the continuous stream of data coming from users.
+    - Examples: product search, customized selecion of news article, product recommendation, etc.
   
 ### Courses list:
 
 ### Machine Learning and Deep Learning
-- Machine Learning by Stanford Uni on Coursera (Currently on Week 7)
+- Machine Learning by Stanford Uni on Coursera (Currently on Week 9)
 - Neural Networks and Deep Learning by deeplearning.ai on Coursera (Currently on Week 2)
 - Machine Learning (intro and intermediate) on Kaggle
 - Deep Learning on Kaggle
