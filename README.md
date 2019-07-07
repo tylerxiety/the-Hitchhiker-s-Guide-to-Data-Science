@@ -115,12 +115,29 @@ I put all the notes of online and on-campus data science courses and learning ac
       - Compute the eigenvectors.
   
   
-   - Anomaly Detection Examples:
-     - Fraud detection
-     - Monitoring machines in a data center
-     - Manuafacturing (e.g. airvraft engines)
+   - **Anomaly Detection Algorithm (also called Density Estimation Algorithm):
+     - Application examples:
+       - Fraud detection
+       - Monitoring machines in a data center
+       - Manuafacturing (e.g. airvraft engines)   
+     - Algorithm:
+       1.Choose features x that might be indicative of anomalous examples.
+       2.Fit parameters μ and σ square
+       3.Given new example x, compute ρ(x) = Π ρ(x, μ, σ square), Anomaly if ρ(x) < ε.        
+     - Techniques:
+       Choose/craete features taht might take on unusually large or small values in the event of an anomaly.
+       Make features gaussian.
+       
+  - **Anomaly Detection vs. Supervised Learning**:
+
+  | Anomaly Detection | Supervised Learning |
+  |----------------|:-------------:|
+  | Very small number of positive examples (y = 1), large number of negative examples (y = 0).| Large number of postive and negative examples. |
+  | Many different "types" of anomalies, hard to learn what the anomalies look like due to too few examples; future anomalies may be very different from ones in the training set.  | Enough positive examples for algorithm to learn, future positive examples likely to be similar to ones in training set. |
+
+  - **Multivariate Gaussian Distribution Algorithm**
   
-  - Address asymmetrical (non-gausian) features
+
   
   
   
