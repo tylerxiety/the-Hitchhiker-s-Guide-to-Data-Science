@@ -129,6 +129,7 @@ I put all the notes of online and on-campus data science courses and learning ac
        - Make features gaussian.
        
   - **Anomaly Detection vs. Supervised Learning**
+  
     | Anomaly Detection | Supervised Learning |
     |----------------|:-------------:|
     | Very small number of positive examples (y = 1), large number of negative examples (y = 0). | Large number of postive and negative examples. |
@@ -138,6 +139,7 @@ I put all the notes of online and on-campus data science courses and learning ac
     Instead model ρ(x1), ρ(x2),... separately, model ρ(x) all in one go: ρ(x;μ,ε).
   
   - **Anomaly Detection Algorithm vs. Multivariate Gaussian Algorithm**
+  
     | Anomaly Detection | Multivariate Gaussian |
     |----------------|:-------------:|
     | ρ(x1;μ1,σ1 square)*...* ρ(xn;μn,σn square) | ρ(x;μ,∑) |
