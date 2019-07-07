@@ -115,7 +115,7 @@ I put all the notes of online and on-campus data science courses and learning ac
       - Compute the eigenvectors.
   
   
-   - **Anomaly Detection Algorithm**(also called Density Estimation Algorithm):
+   - **Anomaly Detection Algorithm** (also called Density Estimation Algorithm):
      - Application examples:
        - Fraud detection
        - Monitoring machines in a data center
@@ -125,18 +125,24 @@ I put all the notes of online and on-campus data science courses and learning ac
        2. Fit parameters μ and σ square
        3. Given new example x, compute ρ(x) = Π ρ(x, μ, σ square), Anomaly if ρ(x) < ε.        
      - Techniques:
-       - Choose/craete features taht might take on unusually large or small values in the event of an anomaly.
+       - Choose/create features taht might take on unusually large or small values in the event of an anomaly.
        - Make features gaussian.
        
-  - **Anomaly Detection vs. Supervised Learning**:
-
+  - **Anomaly Detection vs. Supervised Learning**
   | Anomaly Detection | Supervised Learning |
   |----------------|:-------------:|
   | Very small number of positive examples (y = 1), large number of negative examples (y = 0).| Large number of postive and negative examples. |
   | Many different "types" of anomalies, hard to learn what the anomalies look like due to too few examples; future anomalies may be very different from ones in the training set.  | Enough positive examples for algorithm to learn, future positive examples likely to be similar to ones in training set. |
 
   - **Multivariate Gaussian Distribution Algorithm**
+    Instead model ρ(x1), ρ(x2),... separately, model ρ(x) all in one go: ρ(x;μ,ε).
   
+  - **Anomaly Detection Algorithm vs. Multivariate Gaussian Algorithm**
+   | Anomaly Detection | Multivariate Gaussian |
+  |----------------|:-------------:|
+  | ρ(x1;μ1,σ1 square)*...* ρ(xn;μn,σn square) | ρ(x;μ,∑) |
+  | Manually create features to capture correlations between features. | Automatically captres correlations.|
+  |Computationally cheaper, scale better to larger feature size n; perform good if training set size m is small. | computationaly more expensive; must have m > n, or else ∑ is non-invertible.|
 
   
   
