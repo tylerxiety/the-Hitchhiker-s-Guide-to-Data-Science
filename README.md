@@ -115,18 +115,18 @@ I put all the notes of online and on-campus data science courses and learning ac
       - Compute the eigenvectors.
   
   
-   - **Anomaly Detection Algorithm (also called Density Estimation Algorithm):
+   - **Anomaly Detection Algorithm**(also called Density Estimation Algorithm):
      - Application examples:
        - Fraud detection
        - Monitoring machines in a data center
        - Manuafacturing (e.g. airvraft engines)   
      - Algorithm:
-       1.Choose features x that might be indicative of anomalous examples.
-       2.Fit parameters μ and σ square
-       3.Given new example x, compute ρ(x) = Π ρ(x, μ, σ square), Anomaly if ρ(x) < ε.        
+       1. Choose features x that might be indicative of anomalous examples.
+       2. Fit parameters μ and σ square
+       3. Given new example x, compute ρ(x) = Π ρ(x, μ, σ square), Anomaly if ρ(x) < ε.        
      - Techniques:
-       Choose/craete features taht might take on unusually large or small values in the event of an anomaly.
-       Make features gaussian.
+       - Choose/craete features taht might take on unusually large or small values in the event of an anomaly.
+       - Make features gaussian.
        
   - **Anomaly Detection vs. Supervised Learning**:
 
