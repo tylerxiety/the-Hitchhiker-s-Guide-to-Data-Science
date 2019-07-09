@@ -10,7 +10,13 @@ I put all the notes of online and on-campus data science courses and learning ac
  
 ### Notes:
 
-**Machine Learning**: A program is said to learn from experience E with respect to tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.
+**Week 1**
+
+**Machine Learning, a "classical" definition:** A program is said to learn from experience E with respect to tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.
+
+**Types of Machine Learning algorithms:**
+ - Major two: Supervised Learning and Unsupervised Learning.
+ - Others: Reinforcement learning, recommender systems.
 
 **Supervised Learning**: Needs labelled examples (x,y). Categorized into "regression" and "classification" problems.
 
