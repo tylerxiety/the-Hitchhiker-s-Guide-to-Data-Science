@@ -9,157 +9,34 @@ I put all the notes of online and on-campus data science courses and learning ac
  [Machine Learning by Stanford Uni on Coursera](https://www.coursera.org/learn/machine-learning) (Currently on Week 7)
  
 ### Notes:
-
-**Week 1**
-
-**Machine Learning, a "classical" definition:** A program is said to learn from experience E with respect to tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.
-
-**Types of Machine Learning algorithms:**
- - Major two: Supervised Learning and Unsupervised Learning.
- - Others: Reinforcement learning, recommender systems.
-
-**Supervised Learning**: Needs labelled examples (x,y). Categorized into "regression" and "classification" problems.
-
-**Unsupervised Learning**: Needs only the input (x). Categorized into "clustering" (e.g.,  market segmentation, text summarization)and "non-clustering" (e.g., the "Cocktail Party Algorithm") problems.
-
-
-### Supervised Learning
-
-- **Supervised Learning Models**: A hypothesis function H to predict the corresponding value Y of input X (i.e., H : X → Y). The accuracy of the function h is measured by a **cost function** J. 
-
-- **Cost Function**: a convex  function of the parameter estimates θ to measure the accuracy of hypothesis function H. Function types are different for regression and classification models.
-
-- **Ways to Optimize θ**:
-  - **Gradient Descent**: A method to estimate the parameters θ in the hypothesis function h by finding the minimum value of the cost function J, which is taking the derivative of cost function J(θ).
-  - **Normal Equation**: another way of minimizing J by explicitly taking its derivatives with respect to the θ's, and setting them to zero. This allows to find the optimum θ without iteration.
-  - **More sophisticated ones**: Conjugate gradient, BFGS, L-BFGS, etc.
-
-- **Techniques for Gradient Descent**:
-  - **Feature Scaling**: divide the input values by the range, resulting in a new range of just 1. 
-  - **Mean Normalization**: subtract the average value from the values for that input variable, resulting in a new average value for the input variable of just zero.
-  - **Learning Rate alpha**: increase alpha if convergance is slow, decrease alpha if cost function J(θ) ever increases.
-  - **Automatic Convergence Test**: declare convergence if J(θ) decreases by less than E in one iteration, where E is some small value such as 10^−3. However, it's difficult to choose this threshold value.
-
-- **Comparison of Gradient Descent and Normal Equation**:
-
-  | Gradient Descent | Normal Equation |
-  |----------------|:-------------:|
-  | Need to choose alpha | No need to choose alpha |
-  | Needs many iterations | No need to iterate |
-  | Complexity O (k\*n^2) | Complexity O (k\*n^3), need to calculate inverse of X^T\*X |
-  | Works well when n is large | Slow if n is very large |
-
-- **Model/Function Types**:
-  - **Linear Regression**: a linear function to model the relationship between dependent variable Y and one or more independent variables X.
-  -  **Multivariate Linear Regression**: Linear regression with multiple variables. 
-  - **Polynomial Regression**: combine multiple features into one (e.g., combine x1 and x2 into a new feature x3 by taking x1\*x2). This can be a quadratic, cubic or square root function.
-  - **Classification Model / Binary Logistic Regression**: use a **Logistic Function** (also called **Sigmoid Function**) maps any input X to the (0, 1) interval. The hypothesis function H gives the probability of output Y (e.g., H(x)=0.7 means a probability of 70% that the output is 1, or 30% for output 0). 
-  - **Multiclass Classification**: a One-vs-all approach. Train a Binary Logistic Regression classifier H for each class￼ to predict the probability that ￼ ￼y = i￼￼. To make a prediction on a new x, pick the class ￼that maximizes H.
-  - **Support Vector Machines (SVM)**
-
-- **Decision Boundary**: the line that separates the area where y = 0 and where y = 1. It is created by hypothesis function.
-
-### Regularization
-
-- **Underfitting / High Bias**: is when hypothesis function H maps poorly to the trend of the data. It is usually caused by a function that is too simple or uses too few features. 
+<table>
+  <tr><td><div align="center"><b>Models</b></div></td>
+   <td><div align="center"><b>Topics and Techniques Covered</b></div></td></tr>
+  <tr><td colspan="2"><div align="center"><b>Supervised Learning Models</b></div></td></tr>
+  <tr><td>1. <b>Linear Regression</b> (Week 1&2):<br>Predicting housing prices.</td>
+   <td><ul><li>One variable and multi-variable algorithms</li><li>Learning method: gradient descent vs. normal equation</li><li>Regularization</li><li>Solving non-invertibility and removing linearly dependency</li></ul></td></tr>
+  <tr><td>2. <b>Logistic Regression</b> (Week 3): Classifying emails.</td>
+   <td><ul><li>Binary classification and multi-class classification algorithms</li><li>Leaning method: gradient descent and advanced optimization algorithms (e.g. Conjugate Gradient, BFGS, L-BFGS)</li></ul></td></tr>
+ <tr><td>3. <b>Neural Networks</b> (Week 4&5)</td>
+  <td><ul><li>Non-linear regression and classification algorithms</li><li>Activation function, network architectures</li><li>Forward propagation and backpropagation</li><li>Unrolling parameters, gradient checking, random initialization</li></ul></td></tr>
+ <tr><td>4. <b>Support Vector Machines</b> (SVMs) (Week7)</td>
+  <td><ul><li>Linear classification and non-linear classification with kernels</li><li>Choice of parameters, choice of kernels/ similarity functions</li><li>Logistic regression vs. SVMs</li></ul></td></tr>
+ <tr><td>5. <b>Online Learning algorithm</b> (Week 10)</td>
+  <td><ul><li>Continuous stream of data</li><li>Stochastic gradient descent</li></ul></td></tr>
+ <tr><td colspan="2"><div align="center"><b>Unsupervised Learning Models</b></div></td></tr>
+ <tr><td>6. <b>K-means Clustering</b> (Week 8)</td>
+  <td><ul><li>Random initialization</li><li>Choosing the value of K</li><li>Non-separated clusters</li></ul></td></tr>
+ <tr><td>7. <b>Principle Component Analysis</b> (PCA) (Week 8)</td>
+  <td><ul><li>Application of data compression and data visualization</li><li>PCA vs. linear regression</li><li>Reconstruction data after PCA</li></ul></td></tr>
+ <tr><td>8. <b>Anomaly Detection Algorithm</b> (Week 9)</td>
+  <td><ul><li>Density estimation, multivariate normal distribution</li><li>Choice of features</li><li>Anomaly detection vs. supervised learning</li></ul></td></tr>
  
-- **Overfitting / High Variance**: is when hypothesis function H fits the available data but does not generalize well to predict new data. It is usually caused by a complicated function that creates a lot of unnecessary curves and angles unrelated to the data.
+ <tr><tb>9. <b>Recommender Systems</b> (Week 9)</td><td><ul><li>Content-based recommender algorithm and collaborative filtering algorithm</li><li>Vectorization, mean normalization</li></ul></td></tr>
  
-- **Options to Address Overfitting**:
-  - **Reduce the number of features**:
-    - Manually select which features to keep.
-    - Use a model selection algorithm.
-  - **Regularization**:
-    - Keep all the features, but reduce the magnitude of parameters θ 
-    - Regularization works well when we have a lot of slightly useful features.
-    
-### Application Examples
+ <tr><td colspan="2"><div align="center"><b>Supervised Learning ModelsGeneral advice and techniques</b> (Week 1, 3, 6&10)</div></td></tr>
+ <tr><td colspan="2"><ul><li>Model selection, learning rate</li><li>Diagnosing bias (underfitting) vs. variance (overfitting), error analysis</li><li>Feature Scaling and mean normalization, feature engineering</li><li>Large scale machine learning with big data: choice of batch gradient descent, stochastic gradient descent and mini-batch gradient descent</li><li>Data parallelism and Map Reduce</li></ul></td></tr>
+</table>
 
-- **Spam Classification with SVM**
-  - **Email preprocessing and normalization**:
-    - Remove Header
-    - Lower-casing
-    - Stripping HTML
-    - Normalizing URLs
-    - Normalizing Email Addresses
-    - Normalizing Numbers
-    - Normalizing Dollars
-    - Word Stemming: Words are reduced to their stemmed form. For example, "discount", "discounts",discounted" and "discounting" are all replaced with "discount". Sometimes, the Stemmer actually strips additional characters from the end, so "include", "includes", "included" and "including" are all replaced with "includ".
-    - Removal of non-words: Non-words and punctuation have been removed. All white spaces (tabs, newlines, spaces) have all been trimmed to a single space character.
-    
-  - **Vocabulary list**: 
-    - Choose only the most frequently occuring words as the set of words considered.
-    - Map each word in the preprocessed emails into a list of word indices.
-  - **Feature Extraction**: produces a feature vector from the word indices. 
-  - **Train**
-  
-  
-### Unsupervised Learning
-
-- **Models**:
-   - **k-Means Algorithm**: An iterative procedure that starts by guessing the initial centroids, and then refines this guess by repeatedly assigning examples to their closest centroids and then recomputing the centroids based on the assignments.
-     - Random initialization: 
-       - K < m
-       - Randomly pick K training examples
-       - Try random initialization a couple of times (2-10, 10-100, ...)
-     - Choose the value K:
-       - Elbow method: Find the "elbow" of the plot. But not always is the case.
-       - Evaluate K means based on a metric.
-       
-   - **Dimentionality Reduction Model and Examples**:
-       - Models:
-         - Principal Component Analysis (PCA)
-       - Applictions:
-         - Data Compression: 
-           - Speed up supervised learning
-           - Reduce memory/disk needed to store data
-         - Better Data Visualization
-       - Bad Application: Use PCA to prevent overfitting (instead, use regularization).
-   - **Principal Component Analysis (PCA)**:
-      - Normalize the data.
-      - Compute the covariance matrix of the data.
-      - Compute the eigenvectors.
-  
-  
-   - **Anomaly Detection Algorithm** (also called Density Estimation Algorithm):
-     - Application examples:
-       - Fraud detection
-       - Monitoring machines in a data center
-       - Manuafacturing (e.g. airvraft engines)   
-     - Algorithm:
-       1. Choose features x that might be indicative of anomalous examples.
-       2. Fit parameters μ and σ square
-       3. Given new example x, compute ρ(x) = Π ρ(x, μ, σ square), Anomaly if ρ(x) < ε.        
-     - Techniques:
-       - Choose/create features taht might take on unusually large or small values in the event of an anomaly.
-       - Make features gaussian.
-       
-  - **Anomaly Detection vs. Supervised Learning**
-  
-    | Anomaly Detection | Supervised Learning |
-    |----------------|:-------------:|
-    | Very small number of positive examples (y = 1), large number of negative examples (y = 0). | Large number of postive and negative examples. |
-    | Many different "types" of anomalies, hard to learn what the anomalies look like due to too few examples; future anomalies may be very different from ones in the training set. | Enough positive examples for algorithm to learn, future positive examples likely to be similar to ones in training set. |
-
-  - **Multivariate Gaussian Distribution Algorithm**
-    Instead model ρ(x1), ρ(x2),... separately, model ρ(x) all in one go: ρ(x;μ,ε).
-  
-  - **Anomaly Detection Algorithm vs. Multivariate Gaussian Algorithm**
-  
-    | Anomaly Detection | Multivariate Gaussian |
-    |----------------|:-------------:|
-    | ρ(x1;μ1,σ1 square)*...* ρ(xn;μn,σn square) | ρ(x;μ,∑) |
-    | Manually create features to capture correlations between features. | Automatically captres correlations.|
-    |Computationally cheaper, scale better to larger feature size n; perform good if training set size m is small. | computationaly more expensive; must have m > n, or else ∑ is non-invertible.|
-
-  - **Gradient Descent with Large Datasets:**
-    - Batch Gradient Descent (BGD): Use all m examples in each iteration.
-    - Stochastic Gradient Descent (SGD): Use 1 examples in each iteration. Usually faster than BGD when m is large.
-    - Mini-batch Gradient Descent (MGD): Use b example in each iteration. b can be 2-100, a rule of thumb is to use 10. MGD is usually faster than both BGD and SGD. 
-  
-  - **Online Learning Algorithm**
-    - Instead of fixed dataset, use data from users as training data once and dicard the data after, continuously train the model as the continuous stream of data coming from users.
-    - Examples: product search, customized selecion of news article, product recommendation, etc.
   
 ### Courses list:
 
