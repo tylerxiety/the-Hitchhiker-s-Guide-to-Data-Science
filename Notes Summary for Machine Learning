@@ -22,5 +22,5 @@
    <td><ul><li>Density estimation, multivariate normal distribution</li><li>Choice of features</li><li>Anomaly detection vs. supervised learning</li></ul></td></tr>
   <tr><td>9. <b>Recommender Systems</b> (Week 9)</td><td><ul><li>Content-based recommender algorithm and collaborative filtering algorithm</li><li>Vectorization, mean normalization</li></ul></td></tr>
   <tr><td colspan="2"><div align="center"><b>General Advice and Techniques</b> (Week 1, 3, 6&10)</div></td></tr>
-  <tr><td colspan="2"><ul><li>Model selection, learning rate</li><li>Diagnosing bias (underfitting) vs. variance (overfitting), error analysis</li><li>Feature Scaling and mean normalization, feature engineering</li><li>Large scale machine learning with big data: choice of batch gradient descent, stochastic gradient descent and mini-batch gradient descent</li><li>Data parallelism and Map Reduce</li></ul></td></tr>
+  <tr><td colspan="2"><ul><li>Model selection, learning rate</li><li>Diagnosing bias (underfitting) vs. variance (overfitting)</li><li>Error analysis and metrics</li><li>Feature Scaling and mean normalization, feature engineering</li><li>Large scale machine learning with big data: choice of batch gradient descent, stochastic gradient descent and mini-batch gradient descent</li><li>Data parallelism and Map Reduce</li></ul></td></tr>
 </table>
