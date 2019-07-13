@@ -19,14 +19,14 @@ I put all the notes of online and on-campus data science courses and learning ac
    <td><ul><li>Binary classification and multi-class classification algorithms</li><li>Leaning method: gradient descent and advanced optimization algorithms (e.g. Conjugate Gradient, BFGS, L-BFGS)</li></ul></td></tr>
   <tr><td>3. <b>Neural Networks</b> (Week 4&5)</td>
    <td><ul><li>Non-linear regression and classification algorithms</li><li>Activation function, network architectures</li><li>Forward propagation and backpropagation</li><li>Unrolling parameters, gradient checking, random initialization</li></ul></td></tr>
-  <tr><td>4. <b>Support Vector Machines</b> (SVMs) (Week7)</td>
+  <tr><td>4. <b>Support Vector Machines (SVMs)</b> (Week7)</td>
    <td><ul><li>Linear classification and non-linear classification with kernels</li><li>Choice of parameters, choice of kernels/ similarity functions</li><li>Logistic regression vs. SVMs</li></ul></td></tr>
   <tr><td>5. <b>Online Learning algorithm</b> (Week 10)</td>
    <td><ul><li>Continuous stream of data</li><li>Stochastic gradient descent</li></ul></td></tr>
   <tr><td colspan="2"><div align="center"><b>Unsupervised Learning Models</b></div></td></tr>
   <tr><td>6. <b>K-means Clustering</b> (Week 8)</td>
    <td><ul><li>Random initialization</li><li>Choosing the value of K</li><li>Non-separated clusters</li></ul></td></tr>
-  <tr><td>7. <b>Principle Component Analysis</b> (PCA) (Week 8)</td>
+  <tr><td>7. <b>Principle Component Analysis (PCA)</b> (Week 8)</td>
    <td><ul><li>Application of data compression and data visualization</li><li>PCA vs. linear regression</li><li>Reconstruction data after PCA</li></ul></td></tr>
   <tr><td>8. <b>Anomaly Detection Algorithm</b> (Week 9)</td>
    <td><ul><li>Density estimation, multivariate normal distribution</li><li>Choice of features</li><li>Anomaly detection vs. supervised learning</li></ul></td></tr>
