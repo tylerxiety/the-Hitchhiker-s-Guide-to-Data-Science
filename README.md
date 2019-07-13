@@ -8,6 +8,8 @@ I put all the notes of online and on-campus data science courses and learning ac
 ### Course: 
  [Machine Learning by Stanford Uni on Coursera](https://www.coursera.org/learn/machine-learning) (Currently on Week 7)
  
+ 
+
 ### Notes:
 <table>
   <tr><td><div align="center"><b>Models</b></div></td>
