@@ -7,31 +7,127 @@ supervision of Noah Zhao.
 ## Topics
 ### 1. Data Diagnosis
 
-- data validation and cleaning: keep as much data as possible in this stage.
+- Data validation and cleaning: keep as much data as possible in this stage.
 
 ### 2. Design Pattern
-- folder structure, and naming
-- coding pattern: scientific
-- code organization: notebook, scripts, functions
+- Folder structure, and naming
+- Coding pattern: scientific
+- Code organization: notebook, scripts, functions
 
 ### 3. Requirement Gathering
-- business understanding and empathy
-- boundary and pain points
+- Business understanding and empathy
+- Boundary and pain points
 
 ### 4. Modeling
-- machine learning + optimization algorithms
+- Machine learning + optimization algorithms
 - ML part is to estimate the demand function
-- requirements: accuracy, usability (ie, optimizable, fast computation)
+- Requirements: accuracy, usability (ie, optimizable, fast computation)
 
-- model building: 
-get data -> validate data -> build target variable (demand curve) -> define metrics
--> baseline models -> model comparison -> model tuning -> model training -> feature engineering
--> model selection -> harden features -> harden model -> test -> deploy
-- deliverables : model tracker, models, model APIs, docs
-- metrics: MAE, RMSE, MSE, MAPE, RMSLE, runtime performance
-- split data: random, random with stratification, time series, growing windows
-- cross validation:LOOCV, K fold, K fold with stratification, time series,
-- model levels: global, local
-- model types: stats model, traditional ML models, DL models.
+- Model building: 
+    - get data -> validate data -> build target variable (demand curve) -> define metrics
+-> Baseline models -> model comparison -> model tuning -> model training -> feature engineering
+-> Model selection -> harden features -> harden model -> test -> deploy
 
+- Deliverables : model tracker, models, model APIs, docs
+- Metrics: MAE, RMSE, MSE, MAPE, RMSLE, runtime performance
+- Split data: random, random with stratification, time series, growing windows
+- Cross validation:LOOCV, K fold, K fold with stratification, time series,
+- Model levels: global, local
+- Model types: stats model, traditional ML models, DL models.
 
+#### 4.1. Modelling Tactics
+- Linear Regression: 
+    - address multicollinearity
+    - address non-linearity: 1) transform the data, e.g., log, 2) apply segmentation
+
+- Decision Tree:
+    - single tree is prone to overfitting:
+        - Bagging: random forests
+        - Boosting: Gradient Boosting Machine, e.g., xgboost, lightGBM
+    - feature engineering are very important
+    - parameters make big differences
+    
+- RNN:
+    - address that RNN is not good at memorising inputs from a long time ago: 
+    LSTM, GRU, lag features
+    - General tricks:
+        - Inputs normalisation
+        - Dropout
+        - Clipping
+        - Optimiser
+        - etc.
+        
+- Ensemble techniques:
+    - Bagging
+    - Boosting
+    - Stacking
+    - Blending
+    
+- Model tuning:
+    - Parameter tuning sequence:
+        1. Learning rate
+        2. Model structure parameters: reduce bias
+        3. Regularization parameters: reduce variance
+    - High bias: training and validation error are both high
+        - More features
+        - More complicated model
+        - Parameter tuning
+    - High variance: training and validation error are very different
+        - Consider stratification of validation set
+        - Simpler model: regularisation
+    
+    
+#### 4.2. Feature ideas
+- Derived features (for time series data):
+    - numeric:lag, YoY, MA, Diff, %, etc.
+    - categorical: clusters, store flag, time-based features from date, 
+    promotion flag, OHE, etc.
+- More ideas (specific for this project):
+    - Public holidays
+    - Store operating hours
+    - Relative cost to baseline
+    - Star-employee stores
+    - No. of fuel products
+    - Relative lagged prices for other fuel products
+    
+### Optimization
+- Deliverables: demand curve functions, optimization algorithms, optimization
+diagnosis functions, optimizer API
+- Demand curve: 
+    - what-if scenarios, rather than a plot of historical data
+    - Monotonic Transformation, to make demand curve more make sense
+    
+- Key elements: 
+    - objective: may change when new constraints introduced
+    - decision variables
+    - constraint
+    - search space
+    
+- Brute Force:
+    - condition: 
+        - When Search Space is not big
+        - When function is not differentiable
+- Types of Optimisation Problems:
+    - Constrained vs. unconstrained
+    - One variable vs. multiple variables
+    - Discrete variable(s) vs. continuous
+    - Static vs. dynamic
+    - Deterministic vs. stochastic
+    - Linear function vs. non-linear
+    
+- Types of Optimisation Algorithms:
+    - Mathematical programming
+        - Linear Programming / Convex Programming
+        - Nonlinear programming
+    - Dynamic programming
+    - Branch-and-Bound
+    - Constraint programming
+    - Meta-heuristics
+        - Simulated annealing
+        - Tabu search
+        - Evolutionary algorithms
+        - Swarm intelligence
+
+- Mathematical Representation
+
+- Python packages: SciPy Optimization and Root Finding, PuLP, Pyomo, CVXOPT
